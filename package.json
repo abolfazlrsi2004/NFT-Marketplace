@@ -1,0 +1,29 @@
+{
+  "name": "final-exam-of-web-designe-pack",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start:tw": "npx @tailwindcss/cli -i ./css/main.css -o ./css/style.css --watch",
+    "start:tw2": "npx @tailwindcss/cli -i ./css/main2.css -o ./css/style2.css --watch",
+    "start:api-user": "npx json-server --watch data/user.json --port 3001"
+  },
+  "dependencies": {
+    "axios": "^1.16.0",
+    "jquery": "^4.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "json-server": "^1.0.0-beta.15",
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "^4.1.18",
+    "vite": "^8.0.10"
+  }
+}

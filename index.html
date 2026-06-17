@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/icons/Storefront.svg" />
+
+    <script type="module" src="js/jquery.js"></script>
+    <script type="module" src="js/axios.js"></script>
+
+    <title>NFT Marketplace</title>
+  </head>
+  <body class="bg-background-primary">
+    <header
+      class="bg-background-primary sticky top-0 left-0 z-90 flex w-full items-center justify-between gap-26 px-12.5 py-5 transition-all duration-300 md:px-12 md:py-5"
+    >
+      <div class="flex content-center items-center gap-3">
+        <img src="assets/icons/Storefront.svg" alt="This is logo" />
+        <img
+          src="assets/icons/NFT Marketplace.svg"
+          alt="This is name of logo"
+        />
+      </div>
+
+      <nav
+        id="navbar"
+        class="bg-sed absolute top-full right-12 mt-4 flex flex-col items-center gap-2.5 rounded-xl p-4 shadow-md xl:relative xl:flex xl:flex-row xl:shadow-none"
+      >
+        <a
+          class="hover:text-primary px-5 py-3 text-base leading-[140%] font-semibold text-white transition-all duration-300 ease-out"
+          href="#market"
+          >Marketplace</a
+        >
+        <a
+          class="hover:text-primary px-5 py-3 text-base leading-[140%] font-semibold text-white transition-all duration-300 ease-out"
+          href="#creators"
+          >Rankings</a
+        >
+        <a
+          class="hover:text-primary px-5 py-3 text-base leading-[140%] font-semibold text-white transition-all duration-300 ease-out"
+          href="#connect"
+          >Connect a wallet</a
+        >
+
+        <a href="form.html"
+          ><button
+            type="button"
+            class="bg-primary hover:bg-sed flex cursor-pointer content-center items-center gap-3 rounded-[20px] px-7.5 py-4 transition-all duration-300 ease-out"
+          >
+            <img
+              class="h-5 w-5"
+              src="assets/icons/User.svg"
+              alt="this is user"
+            />
+            <span class="text-base leading-[140%] font-semibold text-white"
+              >Sign Up</span
+            >
+          </button>
+        </a>
+      </nav>
+
+      <button id="menu-btn" class="xl:hidden">
+        <img src="assets/icons/Burger-Menu.svg" alt="Burger Menu icon" />
+      </button>
+    </header>
+
+    <main class="bg-background-primary">
+      <section
+        class="flex max-w-7xl flex-col px-7.5 py-20 md:flex-row md:justify-between md:px-18 xl:m-auto xl:px-0"
+      >
+        <div
+          class="flex flex-col items-start gap-2.5 md:w-[380px] md:gap-5 xl:w-[510px]"
+        >
+          <h1 class="text-[67px] leading-[110%] font-bold text-white">
+            Discover digital art & Collect NFTs
+          </h1>
+          <p class="text-[22px] leading-[160%] font-normal text-white">
+            NFT marketplace UI created with Anima for Figma. Collect, buy and
+            sell art from more than 20k NFT artists.
+          </p>
+
+          <div class="hidden md:block">
+            <button
+              class="bg-primary hover:bg-sed rounded-20 flex cursor-pointer items-center gap-3 px-12.5 py-5 xl:mt-2.5"
+              type="button"
+            >
+              <img
+                src="assets/icons/RocketLaunch.svg"
+                alt="This is RocketLaunch logo"
+              />
+              <span class="text-base leading-[140%] font-semibold text-white"
+                >Get Started</span
+              >
+            </button>
+          </div>
+
+          <div class="hidden md:block">
+            <div
+              class="grid grid-rows-2 justify-items-start gap-x-7.5 md:grid-cols-3 xl:mt-2.5 xl:grid-cols-[150px_150px_150px]"
+            >
+              <h4 class="font-mono text-[28px] leading-[140%] font-bold text-white">
+                240k+
+              </h4>
+              <h4 class="font-mono  text-[28px] leading-[140%] font-bold text-white">
+                100k+
+              </h4>
+              <h4 class="font-mono  text-[28px] leading-[140%] font-bold text-white">
+                240k+
+              </h4>
+
+              <span class="text-2xl leading-[160%] font-normal text-white"
+                >Total Sale</span
+              >
+              <span class="text-2xl leading-[160%] font-normal text-white"
+                >Auctions</span
+              >
+              <span class="text-2xl leading-[160%] font-normal text-white"
+                >Artists</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 md:mt-0 md:w-[350px] xl:w-[510px]">
+          <img
+            class="w-full"
+            src="assets/images/Placeholder.png"
+            alt="This is main image"
+          />
+
+          <div
+            class="bg-background-secondary flex flex-col items-start gap-2.5 rounded-b-[20px] px-5 py-5.5"
+          >
+            <h5 class="text-[22px] leading-[140%] font-semibold text-white">
+              Space Walking
+            </h5>
+            <div class="flex content-center items-center gap-3">
+              <img
+                class="h-6 w-6"
+                src="assets/images/animakid.png"
+                alt="This is avatar image"
+              />
+              <span class="text-base leading-[140%] font-normal text-white">
+                Animakid
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="block md:hidden">
+          <button
+            class="bg-primary rounded-20 mt-10 mb-10 flex w-full cursor-pointer items-center justify-center gap-3 px-12.5 py-5 xl:mt-2.5"
+            type="button"
+          >
+            <img
+              src="assets/icons/RocketLaunch.svg"
+              alt="This is RocketLaunch logo"
+            />
+            <span class="text-base leading-[140%] font-semibold text-white"
+              >Get Started</span
+            >
+          </button>
+        </div>
+
+        <div class="flex items-center justify-between md:hidden">
+          <div class="flex flex-col">
+            <h4 class="text-[28px] leading-[140%] font-bold text-white">
+              240k+
+            </h4>
+
+            <span class="text-2xl leading-[160%] font-normal text-white"
+              >Total Sale</span
+            >
+          </div>
+
+          <div class="flex flex-col">
+            <h4 class="text-[28px] leading-[140%] font-bold text-white">
+              100k+
+            </h4>
+
+            <span class="text-2xl leading-[160%] font-normal text-white"
+              >Auctions</span
+            >
+          </div>
+
+          <div class="flex flex-col">
+            <h4 class="text-[28px] leading-[140%] font-bold text-white">
+              240k+
+            </h4>
+
+            <span class="text-2xl leading-[160%] font-normal text-white"
+              >Artists</span
+            >
+          </div>
+        </div>
+      </section>
+
+            <section id="Trending" class="xl:max-w-7xl xl:mx-auto flex flex-col gap-3 md:px-18 xl:px-0   md:py-20 px-7.5 py-10">
+      <h3 class="xl:text-4xl md:text-3xl font-semibold text-white capitalize">
+        Trending Collection
+      </h3>
+      <p class="md:mb-12.5  mb-7 md:text-base xl:text-2xl text-white capitalize">
+        Checkout our weekly updated trending collection.
+      </p>
+
+     <section id="trending-collections" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 ">
+
+     </section>
+    </section>
+
+
+      <section id="creators" class=" xl:max-w-7xl  xl:mx-auto flex flex-col gap-10 xl:gap-15 px-7.5 md:px-18 xl:px-0 py-10 xl:py-20">
+      <div class="flex items-end justify-between">
+        <div class="w-[315px] md:w-90 xl:w-2xl">
+          <h3 class="mb-3 text-2xl xl:text-4xl font-semibold text-white capitalize">
+            Top creators
+          </h3>
+          <p class="xl:text-2xl text-base font-normal text-white capitalize">
+            Checkout Top Rated Creators on the NFT Marketplace
+          </p>
+        </div>
+
+        <div class="hidden  md:block">
+        <button
+          type="button"
+          class="hover:bg-sed border-primary cursor-pointer flex items-center gap-3 rounded-20 border-2 border-solid px-12 py-5 text-base font-semibold text-white transition-all duration-300"
+        >
+          <img src="assets/icons/RocketLaunch purper.svg" alt="purple rocket" />
+          <span class="text-base font-semibold">View Rankings</span>
+        </button>
+        </div>
+      </div>
+
+      <section
+        id="creators-gallery"
+        class="gap-5 grid grid-cols-1 xl:gap-7.5 md:grid-cols-2 md:grid-rows-2 xl:flex xl:justify-between xl:flex-wrap md:gap-y-8  "
+      >
+       
+
+        
+      </section>
+
+              <div class="block md:hidden">
+        <button
+          type="button"
+          class="hover:bg-sed border-primary flex items-center cursor-pointer gap-3 rounded-20 border-2 border-solid px-21 py-5 text-base font-semibold text-white transition-all duration-300"
+        >
+          <img src="assets/icons/RocketLaunch purper.svg" alt="purple rocket" />
+          <span class="text-base font-semibold">View Rankings</span>
+        </button>
+        </div>
+    </section>
+
+
+    <section id="category" class=" xl:max-w-7xl  xl:mx-auto xl:px-0 md:px-18 px-7.5 md:py-20  flex flex-col md:gap-10 xl:gap-5">
+      <h3 class="text-3xl xl:text-4xl text-white font-semibold capitalize md: mb-3">Browse Categories</h3>
+
+      <section id="category-gallery" class="xl:flex xl:flex-wrap xl:justify-between gap-4.75 md:gap-7.5 grid grid-cols-2 md:grid-cols-4 ">
+     
+      </section>
+    </section>
+
+
+      <section id="discover" class=" xl:max-w-7xl  xl:mx-auto flex flex-col md:gap-15 gap-10 md:px-16  xl:px-0 md:py-20 px-7.5 py-10">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="mb-3 text-3xl xl:text-4xl  font-semibold text-white capitalize">
+            Discover More NFTs
+          </h3>
+          <p class="xl:text-2xl text-base text-white capitalize">
+            Explore new trending NFTs
+          </p>
+        </div>
+
+        <button
+          type="button"
+          class="hover:bg-sed border-primary md:flex hidden items-center gap-3 rounded-20 border-2 border-solid px-12 py-5 text-base font-semibold text-white transition-all duration-300"
+        >
+          <img src="assets/icons/Eye purper.svg" alt="purple eye icon" />
+          <span>See All</span>
+        </button>
+      </div>
+
+      <section id="discover-gallery" class="flex md:flex-row flex-col  justify-between gap-5 md:gap-7">
+      </section>
+
+        <button
+          type="button"
+          class="hover:bg-sed border-primary xl:hidden md:hidden flex w-[315px] items-center gap-3 rounded-20 border-2 border-solid px-26.75 py-5 text-base font-semibold text-white transition-all duration-300"
+        >
+          <img src="assets/icons/Eye purper.svg" alt="purple eye icon" />
+          <span>See All</span>
+        </button>
+      </section>
+
+      <section
+        id="magic"
+        style="
+          background-image:
+            linear-gradient(to top, #a259ff, #a259ff00),
+            url(assets/images/NFT\ Highlight.png);
+        "
+        class=" bg-cover bg-center bg-no-repeat md:h-full md:w-full md:bg-center"
+      >
+        <div
+          class="flex flex-col gap-7.5 px-7.5 pt-30 pb-15 md:flex-row md:items-end md:justify-between md:px-29 md:pt-90"
+        >
+          <div class="flex flex-col items-start gap-7.5">
+            <div
+              class="bg-background-secondary rounded-20 flex w-38 content-center items-center gap-3 px-5 py-2.5"
+            >
+              <img
+                class="h-6 w-6"
+                src="assets/images/Shroomie.png"
+                alt="Shroomie"
+              />
+              <span class="text-base leading-[140%] font-normal text-white"
+                >Shroomie</span
+              >
+            </div>
+
+            <h2
+              class="text-[38px] leading-[120%] font-semibold text-white xl:text-[51px]"
+            >
+              Magic Mashrooms
+            </h2>
+
+            <div class="hidden md:block">
+              <button
+                class="rounded-20 flex cursor-pointer content-center items-center gap-3 hover:bg-Caption bg-white px-12.5 py-5"
+                type="button"
+              >
+                <img src="assets/icons/Eye purper.svg" alt="an eye" />
+                <span class="text-base leading-[140%] font-semibold text-black"
+                  >See NFT</span
+                >
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-background-secondary-op rounded-20 flex w-74 flex-col content-end gap-2.5 p-7.5 backdrop-blur-[10px]"
+          >
+            <span class="text-xs leading-[110%] font-normal text-white"
+              >Auction ends in:</span
+            >
+
+            <div class="flex gap-3">
+              <div class="flex flex-col items-start gap-1">
+                <span id="hour" class="text-[38px] leading-[120%] font-bold text-white"
+                  >59</span
+                >
+                <span class="text-xs leading-[110%] font-normal text-white"
+                  >Hours</span
+                >
+              </div>
+
+              <span class="text-[28px] leading-[140%] font-bold text-white"
+                >:</span
+              >
+
+              <div class="flex flex-col items-start gap-1">
+                <span  id="minute" class="text-[38px] leading-[120%] font-bold text-white"
+                  >59</span
+                >
+                <span class="text-xs leading-[110%] font-normal text-white"
+                  >Minutes</span
+                >
+              </div>
+              <span class="text-[28px] leading-[140%] font-bold text-white"
+                >:</span
+              >
+
+              <div class="flex flex-col items-start gap-1">
+                <span id="second" class="text-[38px] leading-[120%] font-bold text-white"
+                  >59</span
+                >
+                <span class="text-xs leading-[110%] font-normal text-white"
+                  >Seconds</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="block md:hidden">
+            <button
+              class="rounded-20 flex w-[296px] cursor-pointer content-center items-center justify-center gap-3 bg-white px-12.5 py-5"
+              type="button"
+            >
+              <img src="assets/icons/Eye purper.svg" alt="an eye" />
+              <span class="text-base leading-[140%] font-semibold text-black"
+                >See NFT</span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="connect" class="m-auto max-w-7xl px-7.5 py-10 md:px-18 xl:px-0 xl:py-20">
+        <div class="flex flex-col justify-start gap-2.5">
+          <h3
+            class="text-[28px] leading-[140%] font-semibold text-white xl:text-[38px] xl:leading-[120%]"
+          >
+            How it works
+          </h3>
+          <span
+            class="mb-10 font-normal text-white md:text-base md:leading-[140%] xl:mb-12 xl:text-[22px] xl:leading-[160%]"
+            >Find out how to get started</span
+          >
+        </div>
+
+        <div
+          class="flex flex-col items-start justify-between gap-5 md:flex-row md:items-center md:gap-0"
+        >
+          <div
+            class="bg-background-secondary rounded-20 flex w-[315px] flex-row items-center gap-5 px-5 pt-2.5 pb-5 md:w-[210px] md:flex-col md:pb-7.5 xl:w-[330px] xl:px-7.5"
+          >
+            <img
+              class="w-[100px] md:w-[160px] xl:w-[250px]"
+              src="assets/images/Setup Wallet Icon.png"
+              alt="This is wallet picture"
+            />
+
+            <div class="flex flex-col items-start gap-2.5 md:items-center">
+              <h5
+                class="leading-[140%] font-semibold text-white md:text-base xl:text-[22px]"
+              >
+                Setup Your wallet
+              </h5>
+              <p
+                class="text-xs leading-[140%] font-normal text-white md:text-center xl:text-base"
+              >
+                Set up your wallet of choice. Connect it to the Animarket by
+                clicking the wallet icon in the top right corner.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-background-secondary rounded-20 flex w-[315px] flex-row items-center gap-5 px-5 pt-2.5 pb-5 md:w-[210px] md:flex-col md:pb-7.5 xl:w-[330px] xl:px-7.5"
+          >
+            <img
+              class="w-[100px] md:w-[160px] xl:w-[250px]"
+              src="assets/images/Create Collection Icon.png"
+              alt="This is Create Collection"
+            />
+
+            <div class="flex flex-col items-start gap-2.5 md:items-center">
+              <h5
+                class="leading-[140%] font-semibold text-white md:text-base xl:text-[22px]"
+              >
+                Create Collection
+              </h5>
+              <p
+                class="text-xs leading-[140%] font-normal text-white md:text-center xl:text-base"
+              >
+                Upload your work and setup your collection. Add a description,
+                social links and floor price.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-background-secondary rounded-20 flex w-[315px] flex-row items-center gap-5 px-5 pt-2.5 pb-5 md:w-[210px] md:flex-col md:pb-7.5 xl:w-[330px] xl:px-7.5"
+          >
+            <img
+              class="w-[100px] md:w-[160px] xl:w-[250px]"
+              src="assets/images/Start Earning Icon.png"
+              alt="This is Start Earning"
+            />
+
+            <div class="flex flex-col items-start gap-2.5 md:items-center">
+              <h5
+                class="leading-[140%] font-semibold text-white md:text-base xl:text-[22px]"
+              >
+                Start Earning
+              </h5>
+              <p
+                class="text-xs leading-[140%] font-normal text-white md:text-center xl:text-base"
+              >
+                Choose between auctions and fixed-price listings. Start earning
+                by selling your NFTs or trading others.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="market"
+        class="m-auto max-w-7xl px-7.5 pt-10 pb-10 md:px-18 md:pb-20 xl:px-0"
+      >
+        <div
+          class="md:bg-background-secondary rounded-20 md:gap-7.5 flex flex-col gap-7.5 md:flex-row md:justify-between md:gap-0 md:px-7.5 md:py-10 xl:p-15"
+        >
+          <img
+            class="w-[315px] xl:w-[425px]"
+            src="assets/images/digest.png"
+            alt="This is a digest image"
+          />
+
+          <div
+            class="flex w-[315px] flex-col items-start gap-2.5 md:w-[300px] xl:w-[480px]"
+          >
+            <h3
+              class="text-[28px] leading-[140%] font-semibold text-white xl:text-[38px] xl:leading-[120%]"
+            >
+              Join our weekly digest
+            </h3>
+            <p
+              class="text-base leading-[140%] font-normal text-white xl:text-[22px] xl:leading-[160%]"
+            >
+              Get exclusive promotions & updates straight to your inbox.
+            </p>
+
+            <div
+              class="rounded-20 mt-7.5 flex w-[315px] items-center bg-white md:w-[300px]"
+            >
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email here"
+                required
+                class="px-5 py-3 text-base leading-[140%] font-normal placeholder-black"
+              />
+
+              <div class="hidden xl:block">
+                <button
+                  class="bg-primary hover:bg-Caption rounded-20 flex cursor-pointer gap-3 border-0 px-12.5 py-5 text-[16px] leading-[140%] font-bold text-white"
+                  type="button"
+                >
+                  <img
+                    src="assets/icons/post email.svg"
+                    alt="post icon"
+                  />Subscribe
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-1.5 block xl:hidden">
+              <button
+                class="bg-primary rounded-20 hover:bg-Caption  flex w-[315px] cursor-pointer justify-center gap-3 border-0 px-12.5 py-3 text-base leading-[140%] font-bold text-white md:w-[300px]"
+                type="button"
+              >
+                <img
+                  src="assets/icons/post email.svg"
+                  alt="post icon"
+                />Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-background-secondary pt-10">
+      <section
+        class="px-7.5 md:px-0 md:mx-36 mb-7.5 grid md:mb-12.5 md:grid-cols-1 md:gap-y-7.5 xl:grid-cols-3"
+      >
+        <div class="flex flex-col items-start md:gap-5 xl:gap-7.5">
+          <div class="flex content-center items-center gap-3">
+            <img src="assets/icons/Storefront.svg" alt="This is logo" />
+            <img
+              src="assets/icons/NFT Marketplace.svg"
+              alt="This is logo name"
+            />
+          </div>
+          <div class="flex flex-col gap-4">
+            <span
+              class="text-gray text-base leading-[140%] font-normal xl:w-[238px]"
+              >NFT marketplace UI created with Anima for Figma.</span
+            >
+            <span
+              class="text-gray text-[16px] leading-[140%] font-normal xl:mt-1"
+              >Join our community</span
+            >
+            <div class="flex gap-3">
+              <a href="" class="w-8 h-8"><img
+                src="assets/icons/DiscordLogo.svg"
+                alt="This is Discord logo"
+              />
+              </a>
+
+              <a href="" class="w-8 h-8"><img
+                src="assets/icons/YoutubeLogo.svg"
+                alt="This is YouTube logo"
+              />
+              </a>
+
+              <a href="" class="w-8 h-8"><img
+                src="assets/icons/TwitterLogo.svg"
+                alt="This is Twitter logo"
+              />
+              </a>
+
+              <a href="" class="w-8 h-8">
+              <img
+                src="assets/icons/InstagramLogo.svg"
+                alt="This is Instagram logo"
+              />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start gap-5">
+          <h5 class="text-[22px] font-mono  leading-[160%] font-bold text-white xl:mb-1">
+            Explore
+          </h5>
+          <a href="#" class="text-gray text-[16px] leading-[140%] font-normal"
+            >Marketplace</a
+          >
+          <a href="#" class="text-gray text-[16px] leading-[140%] font-normal"
+            >Rankings</
+          >
+          <a href="#" class="text-gray text-[16px] leading-[140%] font-normal"
+            >Connect a wallet</
+          >
+        </div>
+
+        <div class="flex flex-col items-start gap-5">
+          <h5
+            class="font-mono  text-[22px] leading-[160%] font-bold text-white xl:mb-1"
+          >
+            Join our weekly digest
+          </h5>
+          <span
+            class="text-gray w-[330px] text-[16px] leading-[140%] font-normal"
+            >Get exclusive promotions & updates straight to your inbox.</span
+          >
+
+          <div
+            class="flex w-[300px] flex-col rounded-[20px] bg-white md:w-[420px] md:flex-row md:justify-between"
+          >
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email here"
+              required
+              class="px-5 py-3 text-start text-base leading-[140%] font-normal placeholder-black md:px-0 md:py-0"
+            />
+            <button
+              class="bg-primary hover:bg-Caption  hidden cursor-pointer rounded-20 border-0 px-12.5 py-5 text-[16px] leading-[140%] font-bold text-white md:block"
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </div>
+
+          <div class="block md:hidden">
+            <button
+              class="bg-primary flex w-[300px] hover:bg-Caption  cursor-pointer items-center justify-center gap-3 rounded-20 py-3 text-base leading-[140%] font-semibold text-white"
+              type="button"
+            >
+              <img
+                src="assets/icons/email white.svg"
+                alt="email icon"
+              />Subscribe
+            </button>
+          </div>
+
+          <div>
+            <p
+              class="text-gray border-gray border-w w-[316px] border-t pt-5 pb-10 text-[12px] leading-[110%] font-normal md:mx-32 md:hidden"
+            >
+              &copy; NFT Market. Use this template freely.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div>
+        <p
+          class="text-gray border-gray border-w mx-32 hidden border-t pt-5 pb-10 text-[12px] leading-[110%] font-normal md:block"
+        >
+          &copy; NFT Market. Use this template freely.
+        </p>
+      </div>
+    </footer>
+
+<button
+      id="topBtn"
+      class="fixed right-6 bottom-6  rounded-full bg-primary p-4 text-white shadow-lg transition-all duration-300 hover:bg-Caption  focus:border-transparent focus:ring-0 focus:outline-none"
+    >
+      <div class="grid h-6 w-6 place-items-center">
+        <img src="assets/icons/arrow-up.svg" alt="arrow up icon" />
+      </div>
+    </button>
+  </body>
+</html>

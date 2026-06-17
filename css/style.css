@@ -410,9 +410,6 @@
   .w-\[330px\] {
     width: 330px;
   }
-  .w-\[400px\] {
-    width: 400px;
-  }
   .w-\[460px\] {
     width: 460px;
   }
@@ -883,13 +880,6 @@
       }
     }
   }
-  .hover\:bg-background-secondary {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-background-secondary);
-      }
-    }
-  }
   .hover\:bg-sed {
     &:hover {
       @media (hover: hover) {
@@ -901,6 +891,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-primary);
+      }
+    }
+  }
+  .hover\:text-sed {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-sed);
       }
     }
   }

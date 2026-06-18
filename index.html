@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -40,7 +40,7 @@
 
       <nav
         id="navbar"
-        class="bg-sed absolute top-full right-12 mt-4 flex flex-col items-center gap-2.5 rounded-xl p-4 shadow-md xl:relative xl:flex xl:flex-row xl:shadow-none"
+        class="bg-sed absolute top-full right-12 mt-4 flex hidden flex-col items-center gap-2.5 rounded-xl p-4 shadow-md xl:relative xl:flex xl:flex-row xl:shadow-none"
       >
         <a
           class="hover:text-primary px-5 py-3 text-base leading-[140%] font-semibold text-white transition-all duration-300 ease-out"
@@ -114,13 +114,19 @@
             <div
               class="grid grid-rows-2 justify-items-start gap-x-7.5 md:grid-cols-3 xl:mt-2.5 xl:grid-cols-[150px_150px_150px]"
             >
-              <h4 class="font-mono text-[28px] leading-[140%] font-bold text-white">
+              <h4
+                class="font-mono text-[28px] leading-[140%] font-bold text-white"
+              >
                 240k+
               </h4>
-              <h4 class="font-mono  text-[28px] leading-[140%] font-bold text-white">
+              <h4
+                class="font-mono text-[28px] leading-[140%] font-bold text-white"
+              >
                 100k+
               </h4>
-              <h4 class="font-mono  text-[28px] leading-[140%] font-bold text-white">
+              <h4
+                class="font-mono text-[28px] leading-[140%] font-bold text-white"
+              >
                 240k+
               </h4>
 
@@ -211,98 +217,123 @@
         </div>
       </section>
 
-            <section id="Trending" class="xl:max-w-7xl xl:mx-auto flex flex-col gap-3 md:px-18 xl:px-0   md:py-20 px-7.5 py-10">
-      <h3 class="xl:text-4xl md:text-3xl font-semibold text-white capitalize">
-        Trending Collection
-      </h3>
-      <p class="md:mb-12.5  mb-7 md:text-base xl:text-2xl text-white capitalize">
-        Checkout our weekly updated trending collection.
-      </p>
-
-     <section id="trending-collections" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 ">
-
-     </section>
-    </section>
-
-
-      <section id="creators" class=" xl:max-w-7xl  xl:mx-auto flex flex-col gap-10 xl:gap-15 px-7.5 md:px-18 xl:px-0 py-10 xl:py-20">
-      <div class="flex items-end justify-between">
-        <div class="w-[315px] md:w-90 xl:w-2xl">
-          <h3 class="mb-3 text-2xl xl:text-4xl font-semibold text-white capitalize">
-            Top creators
-          </h3>
-          <p class="xl:text-2xl text-base font-normal text-white capitalize">
-            Checkout Top Rated Creators on the NFT Marketplace
-          </p>
-        </div>
-
-        <div class="hidden  md:block">
-        <button
-          type="button"
-          class="hover:bg-sed border-primary cursor-pointer flex items-center gap-3 rounded-20 border-2 border-solid px-12 py-5 text-base font-semibold text-white transition-all duration-300"
+      <section
+        id="Trending"
+        class="flex flex-col gap-3 px-7.5 py-10 md:px-18 md:py-20 xl:mx-auto xl:max-w-7xl xl:px-0"
+      >
+        <h3 class="font-semibold text-white capitalize md:text-3xl xl:text-4xl">
+          Trending Collection
+        </h3>
+        <p
+          class="mb-7 text-white capitalize md:mb-12.5 md:text-base xl:text-2xl"
         >
-          <img src="assets/icons/RocketLaunch purper.svg" alt="purple rocket" />
-          <span class="text-base font-semibold">View Rankings</span>
-        </button>
-        </div>
-      </div>
+          Checkout our weekly updated trending collection.
+        </p>
+
+        <section
+          id="trending-collections"
+          class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3"
+        ></section>
+      </section>
 
       <section
-        id="creators-gallery"
-        class="gap-5 grid grid-cols-1 xl:gap-7.5 md:grid-cols-2 md:grid-rows-2 xl:flex xl:justify-between xl:flex-wrap md:gap-y-8  "
+        id="creators"
+        class="flex flex-col gap-10 px-7.5 py-10 md:px-18 xl:mx-auto xl:max-w-7xl xl:gap-15 xl:px-0 xl:py-20"
       >
-       
+        <div class="flex items-end justify-between">
+          <div class="w-[315px] md:w-90 xl:w-2xl">
+            <h3
+              class="mb-3 text-2xl font-semibold text-white capitalize xl:text-4xl"
+            >
+              Top creators
+            </h3>
+            <p class="text-base font-normal text-white capitalize xl:text-2xl">
+              Checkout Top Rated Creators on the NFT Marketplace
+            </p>
+          </div>
 
-        
-      </section>
-
-              <div class="block md:hidden">
-        <button
-          type="button"
-          class="hover:bg-sed border-primary flex items-center cursor-pointer gap-3 rounded-20 border-2 border-solid px-21 py-5 text-base font-semibold text-white transition-all duration-300"
-        >
-          <img src="assets/icons/RocketLaunch purper.svg" alt="purple rocket" />
-          <span class="text-base font-semibold">View Rankings</span>
-        </button>
-        </div>
-    </section>
-
-
-    <section id="category" class=" xl:max-w-7xl  xl:mx-auto xl:px-0 md:px-18 px-7.5 md:py-20  flex flex-col md:gap-10 xl:gap-5">
-      <h3 class="text-3xl xl:text-4xl text-white font-semibold capitalize md: mb-3">Browse Categories</h3>
-
-      <section id="category-gallery" class="xl:flex xl:flex-wrap xl:justify-between gap-4.75 md:gap-7.5 grid grid-cols-2 md:grid-cols-4 ">
-     
-      </section>
-    </section>
-
-
-      <section id="discover" class=" xl:max-w-7xl  xl:mx-auto flex flex-col md:gap-15 gap-10 md:px-16  xl:px-0 md:py-20 px-7.5 py-10">
-      <div class="flex items-center justify-between">
-        <div>
-          <h3 class="mb-3 text-3xl xl:text-4xl  font-semibold text-white capitalize">
-            Discover More NFTs
-          </h3>
-          <p class="xl:text-2xl text-base text-white capitalize">
-            Explore new trending NFTs
-          </p>
+          <div class="hidden md:block">
+            <button
+              type="button"
+              class="hover:bg-sed border-primary rounded-20 flex cursor-pointer items-center gap-3 border-2 border-solid px-12 py-5 text-base font-semibold text-white transition-all duration-300"
+            >
+              <img
+                src="assets/icons/RocketLaunch purper.svg"
+                alt="purple rocket"
+              />
+              <span class="text-base font-semibold">View Rankings</span>
+            </button>
+          </div>
         </div>
 
-        <button
-          type="button"
-          class="hover:bg-sed border-primary md:flex hidden items-center gap-3 rounded-20 border-2 border-solid px-12 py-5 text-base font-semibold text-white transition-all duration-300"
-        >
-          <img src="assets/icons/Eye purper.svg" alt="purple eye icon" />
-          <span>See All</span>
-        </button>
-      </div>
+        <section
+          id="creators-gallery"
+          class="grid grid-cols-1 gap-5 md:grid-cols-2 md:grid-rows-2 md:gap-y-8 xl:flex xl:flex-wrap xl:justify-between xl:gap-7.5"
+        ></section>
 
-      <section id="discover-gallery" class="flex md:flex-row flex-col  justify-between gap-5 md:gap-7">
+        <div class="block md:hidden">
+          <button
+            type="button"
+            class="hover:bg-sed border-primary rounded-20 flex cursor-pointer items-center gap-3 border-2 border-solid px-21 py-5 text-base font-semibold text-white transition-all duration-300"
+          >
+            <img
+              src="assets/icons/RocketLaunch purper.svg"
+              alt="purple rocket"
+            />
+            <span class="text-base font-semibold">View Rankings</span>
+          </button>
+        </div>
       </section>
 
+      <section
+        id="category"
+        class="flex flex-col px-7.5 md:gap-10 md:px-18 md:py-20 xl:mx-auto xl:max-w-7xl xl:gap-5 xl:px-0"
+      >
+        <h3
+          class="md: mb-3 text-3xl font-semibold text-white capitalize xl:text-4xl"
+        >
+          Browse Categories
+        </h3>
+
+        <section
+          id="category-gallery"
+          class="grid grid-cols-2 gap-4.75 md:grid-cols-4 md:gap-7.5 xl:flex xl:flex-wrap xl:justify-between"
+        ></section>
+      </section>
+
+      <section
+        id="discover"
+        class="flex flex-col gap-10 px-7.5 py-10 md:gap-15 md:px-16 md:py-20 xl:mx-auto xl:max-w-7xl xl:px-0"
+      >
+        <div class="flex items-center justify-between">
+          <div>
+            <h3
+              class="mb-3 text-3xl font-semibold text-white capitalize xl:text-4xl"
+            >
+              Discover More NFTs
+            </h3>
+            <p class="text-base text-white capitalize xl:text-2xl">
+              Explore new trending NFTs
+            </p>
+          </div>
+
+          <button
+            type="button"
+            class="hover:bg-sed border-primary rounded-20 hidden items-center gap-3 border-2 border-solid px-12 py-5 text-base font-semibold text-white transition-all duration-300 md:flex"
+          >
+            <img src="assets/icons/Eye purper.svg" alt="purple eye icon" />
+            <span>See All</span>
+          </button>
+        </div>
+
+        <section
+          id="discover-gallery"
+          class="flex flex-col justify-between gap-5 md:flex-row md:gap-7"
+        ></section>
+
         <button
           type="button"
-          class="hover:bg-sed border-primary xl:hidden md:hidden flex w-[315px] items-center gap-3 rounded-20 border-2 border-solid px-26.75 py-5 text-base font-semibold text-white transition-all duration-300"
+          class="hover:bg-sed border-primary rounded-20 flex w-[315px] items-center gap-3 border-2 border-solid px-26.75 py-5 text-base font-semibold text-white transition-all duration-300 md:hidden xl:hidden"
         >
           <img src="assets/icons/Eye purper.svg" alt="purple eye icon" />
           <span>See All</span>
@@ -316,7 +347,7 @@
             linear-gradient(to top, #a259ff, #a259ff00),
             url(assets/images/NFT\ Highlight.png);
         "
-        class=" bg-cover bg-center bg-no-repeat md:h-full md:w-full md:bg-center"
+        class="bg-cover bg-center bg-no-repeat md:h-full md:w-full md:bg-center"
       >
         <div
           class="flex flex-col gap-7.5 px-7.5 pt-30 pb-15 md:flex-row md:items-end md:justify-between md:px-29 md:pt-90"
@@ -343,7 +374,7 @@
 
             <div class="hidden md:block">
               <button
-                class="rounded-20 flex cursor-pointer content-center items-center gap-3 hover:bg-Caption bg-white px-12.5 py-5"
+                class="rounded-20 hover:bg-Caption flex cursor-pointer content-center items-center gap-3 bg-white px-12.5 py-5"
                 type="button"
               >
                 <img src="assets/icons/Eye purper.svg" alt="an eye" />
@@ -363,7 +394,9 @@
 
             <div class="flex gap-3">
               <div class="flex flex-col items-start gap-1">
-                <span id="hour" class="text-[38px] leading-[120%] font-bold text-white"
+                <span
+                  id="hour"
+                  class="text-[38px] leading-[120%] font-bold text-white"
                   >59</span
                 >
                 <span class="text-xs leading-[110%] font-normal text-white"
@@ -376,7 +409,9 @@
               >
 
               <div class="flex flex-col items-start gap-1">
-                <span  id="minute" class="text-[38px] leading-[120%] font-bold text-white"
+                <span
+                  id="minute"
+                  class="text-[38px] leading-[120%] font-bold text-white"
                   >59</span
                 >
                 <span class="text-xs leading-[110%] font-normal text-white"
@@ -388,7 +423,9 @@
               >
 
               <div class="flex flex-col items-start gap-1">
-                <span id="second" class="text-[38px] leading-[120%] font-bold text-white"
+                <span
+                  id="second"
+                  class="text-[38px] leading-[120%] font-bold text-white"
                   >59</span
                 >
                 <span class="text-xs leading-[110%] font-normal text-white"
@@ -412,7 +449,10 @@
         </div>
       </section>
 
-      <section id="connect" class="m-auto max-w-7xl px-7.5 py-10 md:px-18 xl:px-0 xl:py-20">
+      <section
+        id="connect"
+        class="m-auto max-w-7xl px-7.5 py-10 md:px-18 xl:px-0 xl:py-20"
+      >
         <div class="flex flex-col justify-start gap-2.5">
           <h3
             class="text-[28px] leading-[140%] font-semibold text-white xl:text-[38px] xl:leading-[120%]"
@@ -502,11 +542,12 @@
         </div>
       </section>
 
-      <section id="market"
+      <section
+        id="market"
         class="m-auto max-w-7xl px-7.5 pt-10 pb-10 md:px-18 md:pb-20 xl:px-0"
       >
         <div
-          class="md:bg-background-secondary rounded-20 md:gap-7.5 flex flex-col gap-7.5 md:flex-row md:justify-between md:gap-0 md:px-7.5 md:py-10 xl:p-15"
+          class="md:bg-background-secondary rounded-20 flex flex-col gap-7.5 md:flex-row md:justify-between md:gap-0 md:gap-7.5 md:px-7.5 md:py-10 xl:p-15"
         >
           <img
             class="w-[315px] xl:w-[425px]"
@@ -555,7 +596,7 @@
 
             <div class="mt-1.5 block xl:hidden">
               <button
-                class="bg-primary rounded-20 hover:bg-Caption  flex w-[315px] cursor-pointer justify-center gap-3 border-0 px-12.5 py-3 text-base leading-[140%] font-bold text-white md:w-[300px]"
+                class="bg-primary rounded-20 hover:bg-Caption flex w-[315px] cursor-pointer justify-center gap-3 border-0 px-12.5 py-3 text-base leading-[140%] font-bold text-white md:w-[300px]"
                 type="button"
               >
                 <img
@@ -571,7 +612,7 @@
 
     <footer class="bg-background-secondary pt-10">
       <section
-        class="px-7.5 md:px-0 md:mx-36 mb-7.5 grid md:mb-12.5 md:grid-cols-1 md:gap-y-7.5 xl:grid-cols-3"
+        class="mb-7.5 grid px-7.5 md:mx-36 md:mb-12.5 md:grid-cols-1 md:gap-y-7.5 md:px-0 xl:grid-cols-3"
       >
         <div class="flex flex-col items-start md:gap-5 xl:gap-7.5">
           <div class="flex content-center items-center gap-3">
@@ -583,7 +624,7 @@
           </div>
           <div class="flex flex-col gap-4">
             <span
-              class="text-gray text-base leading-[140%] font-normal xl:w-[238px]"
+              class="text-gray mt-5 text-base leading-[140%] font-normal md:mt-0 xl:w-[238px]"
               >NFT marketplace UI created with Anima for Figma.</span
             >
             <span
@@ -591,52 +632,63 @@
               >Join our community</span
             >
             <div class="flex gap-3">
-              <a href="" class="w-8 h-8"><img
-                src="assets/icons/DiscordLogo.svg"
-                alt="This is Discord logo"
-              />
+              <a href="" class="h-8 w-8"
+                ><img
+                  src="assets/icons/DiscordLogo.svg"
+                  alt="This is Discord logo"
+                />
               </a>
 
-              <a href="" class="w-8 h-8"><img
-                src="assets/icons/YoutubeLogo.svg"
-                alt="This is YouTube logo"
-              />
+              <a href="" class="h-8 w-8"
+                ><img
+                  src="assets/icons/YoutubeLogo.svg"
+                  alt="This is YouTube logo"
+                />
               </a>
 
-              <a href="" class="w-8 h-8"><img
-                src="assets/icons/TwitterLogo.svg"
-                alt="This is Twitter logo"
-              />
+              <a href="" class="h-8 w-8"
+                ><img
+                  src="assets/icons/TwitterLogo.svg"
+                  alt="This is Twitter logo"
+                />
               </a>
 
-              <a href="" class="w-8 h-8">
-              <img
-                src="assets/icons/InstagramLogo.svg"
-                alt="This is Instagram logo"
-              />
+              <a href="" class="h-8 w-8">
+                <img
+                  src="assets/icons/InstagramLogo.svg"
+                  alt="This is Instagram logo"
+                />
               </a>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-col items-start gap-5">
-          <h5 class="text-[22px] font-mono  leading-[160%] font-bold text-white xl:mb-1">
+        <div class="mt-7.5 flex flex-col items-start gap-5 md:mt-0">
+          <h5
+            class="font-mono text-[22px] leading-[160%] font-bold text-white xl:mb-1"
+          >
             Explore
           </h5>
-          <a href="#market" class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
+          <a
+            href="#market"
+            class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
             >Marketplace</a
           >
-          <a href="#creators" class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
-            >Rankings</
+          <a
+            href="#creators"
+            class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
+            >Rankings</a
           >
-          <a href="#connect" class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
-            >Connect a wallet</
+          <a
+            href="#connect"
+            class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
+            >Connect a wallet</a
           >
         </div>
 
         <div class="flex flex-col items-start gap-5">
           <h5
-            class="font-mono  text-[22px] leading-[160%] font-bold text-white xl:mb-1"
+            class="mt-7.5 font-mono text-[22px] leading-[160%] font-bold text-white md:mt-0 xl:mb-1"
           >
             Join our weekly digest
           </h5>
@@ -646,7 +698,7 @@
           >
 
           <div
-            class="flex w-[300px] flex-col rounded-[20px] bg-white md:w-[420px] md:flex-row md:justify-between"
+            class="rounded-20 flex w-[300px] flex-col bg-white md:w-[420px] md:flex-row md:justify-between"
           >
             <label for="email"></label>
             <input
@@ -657,7 +709,7 @@
               class="px-5 py-3 text-start text-base leading-[140%] font-normal placeholder-black md:px-0 md:py-0"
             />
             <button
-              class="bg-primary hover:bg-Caption  hidden cursor-pointer rounded-20 border-0 px-12.5 py-5 text-[16px] leading-[140%] font-bold text-white md:block"
+              class="bg-primary hover:bg-Caption rounded-20 hidden cursor-pointer border-0 px-12.5 py-5 text-[16px] leading-[140%] font-bold text-white md:block"
               type="submit"
             >
               Subscribe
@@ -666,7 +718,7 @@
 
           <div class="block md:hidden">
             <button
-              class="bg-primary flex w-[300px] hover:bg-Caption  cursor-pointer items-center justify-center gap-3 rounded-20 py-3 text-base leading-[140%] font-semibold text-white"
+              class="bg-primary hover:bg-Caption rounded-20 mb-2.5 flex w-[300px] cursor-pointer items-center justify-center gap-3 py-3 text-base leading-[140%] font-semibold text-white"
               type="button"
             >
               <img
@@ -695,9 +747,9 @@
       </div>
     </footer>
 
-<button
+    <button
       id="topBtn"
-      class="fixed right-6 bottom-6  rounded-full bg-primary p-4 text-white shadow-lg transition-all duration-300 hover:bg-Caption  focus:border-transparent focus:ring-0 focus:outline-none"
+      class="bg-primary hover:bg-Caption fixed right-6 bottom-6 rounded-full p-4 text-white shadow-lg transition-all duration-300 focus:border-transparent focus:ring-0 focus:outline-none"
     >
       <div class="grid h-6 w-6 place-items-center">
         <img src="assets/icons/arrow-up.svg" alt="arrow up icon" />

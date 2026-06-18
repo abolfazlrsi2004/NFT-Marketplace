@@ -21,7 +21,7 @@
   </head>
   <body class="bg-background-primary">
     <header
-      class="bg-background-primary flex items-center sticky top-0 left-0 z-90 gap-26 w-full justify-between px-12.5 py-5 transition-all duration-300 md:px-12 md:py-5"
+      class="bg-background-primary sticky top-0 left-0 z-90 flex w-full items-center justify-between gap-26 px-12.5 py-5 transition-all duration-300 md:px-12 md:py-5"
     >
       <div class="flex content-center items-center gap-3">
         <img src="assets/icons/Storefront.svg" alt="This is logo" />
@@ -31,24 +31,27 @@
         />
       </div>
 
-      <nav id="navbar" class="bg-sed flex gap-2.5 absolute top-full right-12 mt-4  flex-col items-center rounded-xl p-4 shadow-md xl:relative xl:flex xl:flex-row xl:shadow-none">
+      <nav
+        id="navbar"
+        class="bg-sed absolute top-full right-12 mt-4 flex hidden flex-col items-center gap-2.5 rounded-xl p-4 shadow-md xl:relative xl:flex xl:flex-row xl:shadow-none"
+      >
         <a
-          class="hover:text-primary  px-5 py-3 text-base leading-[140%] font-semibold text-white transition-all duration-300 ease-out"
-          href="#"
+          class="hover:text-primary px-5 py-3 text-base leading-[140%] font-semibold text-white transition-all duration-300 ease-out"
+          href="#market"
           >Marketplace</a
         >
         <a
-          class="hover:text-primary  px-5 py-3 text-base leading-[140%] font-semibold text-white transition-all duration-300 ease-out"
-          href="#"
+          class="hover:text-primary px-5 py-3 text-base leading-[140%] font-semibold text-white transition-all duration-300 ease-out"
+          href="#creators"
           >Rankings</a
         >
         <a
-          class="hover:text-primary  px-5 py-3 text-base leading-[140%] font-semibold text-white transition-all duration-300 ease-out"
-          href="#"
+          class="hover:text-primary px-5 py-3 text-base leading-[140%] font-semibold text-white transition-all duration-300 ease-out"
+          href="#connect"
           >Connect a wallet</a
         >
 
-        <a href="#"
+        <a href="form.html"
           ><button
             type="button"
             class="bg-primary hover:bg-sed flex cursor-pointer content-center items-center gap-3 rounded-[20px] px-7.5 py-4 transition-all duration-300 ease-out"
@@ -65,7 +68,7 @@
         </a>
       </nav>
 
-            <button id="menu-btn" class="xl:hidden">
+      <button id="menu-btn" class="xl:hidden">
         <img src="assets/icons/Burger-Menu.svg" alt="Burger Menu icon" />
       </button>
     </header>
@@ -84,7 +87,7 @@
         <div class="w-full md:w-1/2 xl:w-1/2">
           <form class="flex flex-col gap-10" id="form" action="">
             <div
-              class="mx-auto flex flex-col gap-5 md:mt-14 xl:mr-37.5 md:ml-0 md:grid md:grid-rows-2 md:gap-5 xl:mr-37.5"
+              class="mx-auto flex flex-col gap-5 md:mt-14 md:ml-0 md:grid md:grid-rows-2 md:gap-5 xl:mr-37.5"
             >
               <h1
                 class="text-center text-[50px] font-semibold text-white md:text-start"
@@ -99,9 +102,7 @@
               </p>
             </div>
 
-            <div
-              class="flex flex-col items-center md:items-start "
-            >
+            <div class="flex flex-col items-center md:items-start">
               <div class="flex h-11.5 w-[330px] gap-3 rounded-[20px] bg-white">
                 <label for="userName"></label>
                 <img
@@ -118,11 +119,11 @@
                   class="text-base leading-[140%] font-normal placeholder-black"
                 />
               </div>
-                              <span
-                  id="user-name-feedback"
-                  class="text-primary px-3 py-2 font-semibold"
-                >
-                </span>
+              <span
+                id="user-name-feedback"
+                class="text-primary px-3 py-2 font-semibold"
+              >
+              </span>
 
               <div class="flex h-11.5 w-[330px] gap-3 rounded-[20px] bg-white">
                 <label for="email-address"></label>
@@ -141,11 +142,11 @@
                 />
               </div>
 
-                              <span
-                  id="email-address-feedback"
-                  class="text-primary px-3 py-2 font-semibold"
-                >
-                </span>
+              <span
+                id="email-address-feedback"
+                class="text-primary px-3 py-2 font-semibold"
+              >
+              </span>
 
               <div class="flex h-11.5 w-[330px] gap-3 rounded-[20px] bg-white">
                 <label for="password"></label>
@@ -164,11 +165,11 @@
                 />
               </div>
 
-                              <span
-                  id="password-feedback"
-                  class="text-primary px-3 py-2 font-semibold"
-                >
-                </span>
+              <span
+                id="password-feedback"
+                class="text-primary px-3 py-2 font-semibold"
+              >
+              </span>
 
               <div class="flex h-11.5 w-[330px] gap-3 rounded-[20px] bg-white">
                 <label for="confirm-password"></label>
@@ -187,11 +188,11 @@
                 />
               </div>
 
-                              <span
-                  id="confirm-password-feedback"
-                  class="text-primary px-3 py-2 font-semibold"
-                >
-                </span>
+              <span
+                id="confirm-password-feedback"
+                class="text-primary px-3 py-2 font-semibold"
+              >
+              </span>
 
               <button
                 class="bg-primary mt-5 mb-10 flex w-[330px] cursor-pointer items-center justify-center rounded-[20px] py-3 text-[16px] leading-[140%] font-semibold text-white"
@@ -207,7 +208,7 @@
 
     <footer class="bg-background-secondary pt-10">
       <section
-        class="mx-36 mb-7.5 grid md:mb-12.5 md:grid-cols-1 md:gap-y-7.5 xl:grid-cols-3"
+        class="mb-7.5 grid px-7.5 md:mx-36 md:mb-12.5 md:grid-cols-1 md:gap-y-7.5 md:px-0 xl:grid-cols-3"
       >
         <div class="flex flex-col items-start md:gap-5 xl:gap-7.5">
           <div class="flex content-center items-center gap-3">
@@ -219,60 +220,71 @@
           </div>
           <div class="flex flex-col gap-4">
             <span
-              class="text-gray text-base leading-[140%] font-normal xl:w-[238px]"
+              class="text-gray mt-5 text-base leading-[140%] font-normal md:mt-0 xl:w-[238px]"
               >NFT marketplace UI created with Anima for Figma.</span
             >
             <span
-              class="text-gray  text-[16px] leading-[140%] font-normal xl:mt-1"
+              class="text-gray text-[16px] leading-[140%] font-normal xl:mt-1"
               >Join our community</span
             >
             <div class="flex gap-3">
-              <a href="" class="w-8 h-8"><img
-                src="assets/icons/DiscordLogo.svg"
-                alt="This is Discord logo"
-              />
+              <a href="" class="h-8 w-8"
+                ><img
+                  src="assets/icons/DiscordLogo.svg"
+                  alt="This is Discord logo"
+                />
               </a>
 
-              <a href="" class="w-8 h-8"><img
-                src="assets/icons/YoutubeLogo.svg"
-                alt="This is YouTube logo"
-              />
+              <a href="" class="h-8 w-8"
+                ><img
+                  src="assets/icons/YoutubeLogo.svg"
+                  alt="This is YouTube logo"
+                />
               </a>
 
-              <a href="" class="w-8 h-8"><img
-                src="assets/icons/TwitterLogo.svg"
-                alt="This is Twitter logo"
-              />
+              <a href="" class="h-8 w-8"
+                ><img
+                  src="assets/icons/TwitterLogo.svg"
+                  alt="This is Twitter logo"
+                />
               </a>
 
-              <a href="" class="w-8 h-8">
-              <img
-                src="assets/icons/InstagramLogo.svg"
-                alt="This is Instagram logo"
-              />
+              <a href="" class="h-8 w-8">
+                <img
+                  src="assets/icons/InstagramLogo.svg"
+                  alt="This is Instagram logo"
+                />
               </a>
             </div>
           </div>
         </div>
 
-        <div class="flex flex-col items-start gap-5">
-          <h5 class="text-[22px] font-mono  leading-[160%] font-bold text-white xl:mb-1">
+        <div class="mt-7.5 flex flex-col items-start gap-5 md:mt-0">
+          <h5
+            class="font-mono text-[22px] leading-[160%] font-bold text-white xl:mb-1"
+          >
             Explore
           </h5>
-          <a href="#" class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
+          <a
+            href="#market"
+            class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
             >Marketplace</a
           >
-          <a href="#" class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
-            >Rankings</
+          <a
+            href="#creators"
+            class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
+            >Rankings</a
           >
-          <a href="#" class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
-            >Connect a wallet</
+          <a
+            href="#connect"
+            class="text-gray hover:text-sed text-[16px] leading-[140%] font-normal"
+            >Connect a wallet</a
           >
         </div>
 
         <div class="flex flex-col items-start gap-5">
           <h5
-            class="font-mono  text-[22px] leading-[160%] font-bold text-white xl:mb-1"
+            class="mt-7.5 font-mono text-[22px] leading-[160%] font-bold text-white md:mt-0 xl:mb-1"
           >
             Join our weekly digest
           </h5>
@@ -282,7 +294,7 @@
           >
 
           <div
-            class="flex w-[300px] flex-col rounded-20 bg-white md:w-[420px] md:flex-row md:justify-between"
+            class="rounded-20 flex w-[300px] flex-col bg-white md:w-[420px] md:flex-row md:justify-between"
           >
             <label for="email"></label>
             <input
@@ -293,7 +305,7 @@
               class="px-5 py-3 text-start text-base leading-[140%] font-normal placeholder-black md:px-0 md:py-0"
             />
             <button
-              class="bg-primary hidden cursor-pointer rounded-20 border-0 px-12.5 py-5 text-[16px] leading-[140%] font-bold text-white md:block"
+              class="bg-primary hover:bg-Caption rounded-20 hidden cursor-pointer border-0 px-12.5 py-5 text-[16px] leading-[140%] font-bold text-white md:block"
               type="submit"
             >
               Subscribe
@@ -302,7 +314,7 @@
 
           <div class="block md:hidden">
             <button
-              class="bg-primary flex w-[300px] cursor-pointer items-center justify-center gap-3 rounded-20 py-3 text-base leading-[140%] font-semibold text-white"
+              class="bg-primary hover:bg-Caption rounded-20 mb-2.5 flex w-[300px] cursor-pointer items-center justify-center gap-3 py-3 text-base leading-[140%] font-semibold text-white"
               type="button"
             >
               <img
@@ -331,9 +343,9 @@
       </div>
     </footer>
 
-<button
+    <button
       id="topBtn"
-      class="fixed right-6 bottom-6  rounded-full bg-primary p-4 text-white shadow-lg transition-all duration-300 hover:bg-Caption focus:border-transparent focus:ring-0 focus:outline-none"
+      class="bg-primary hover:bg-Caption fixed right-6 bottom-6 rounded-full p-4 text-white shadow-lg transition-all duration-300 focus:border-transparent focus:ring-0 focus:outline-none"
     >
       <div class="grid h-6 w-6 place-items-center">
         <img src="assets/icons/arrow-up.svg" alt="arrow up icon" />

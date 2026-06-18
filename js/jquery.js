@@ -119,7 +119,7 @@ $(function () {
 
     //userName valid
     if (userNameVal === "" || userNameVal.length < 3) {
-      userNameFeedback.text("Username is required and at least 3 charecter");
+      userNameFeedback.text("Username is required and at least 3 characters");
       isValid = false;
     } else {
       userNameFeedback.text("");

@@ -949,6 +949,11 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
+  .md\:mt-2\.5 {
+    @media (width >= 834px) {
+      margin-top: calc(var(--spacing) * 2.5);
+    }
+  }
   .md\:mt-14 {
     @media (width >= 834px) {
       margin-top: calc(var(--spacing) * 14);
@@ -1285,6 +1290,11 @@
   .xl\:mx-auto {
     @media (width >= 80rem) {
       margin-inline: auto;
+    }
+  }
+  .xl\:mt-0 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 0);
     }
   }
   .xl\:mt-1 {
